@@ -1,6 +1,10 @@
 html, body {
   font-size: 16px;
   line-height: 1.25rem;
+  font-smoothing: subpixel-ant;
+  --webkit-font-smoothing: subpixel-ant;
+  --moz-font-smoothing: subpixel-ant;
+  -o-font-smoothing: subpixel-ant;
 }
 
 h1, h2 {
@@ -16,12 +20,17 @@ h3, h4, h5, th {
 h6 {
   font-family: $accent-font;
   font-size: 1.7rem;
+  font-weight: 700;
 }
 
 p, td, li, ol, ul, div, span, {
   font-family: $body-sans-font;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 2rem;
 }
 
-
+code, pre {
+  font-family: $monospace-font;
+  font-size: 1rem;
+  lin-height: 1.5rem;
+}
