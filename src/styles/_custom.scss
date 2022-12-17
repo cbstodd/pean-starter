@@ -1,0 +1,27 @@
+html, body {
+  font-size: 16px;
+  line-height: 1.25rem;
+}
+
+h1, h2 {
+  font-family: $header-font;
+  font-weight: 700;
+}
+
+h3, h4, h5, th {
+  font-family: $subheader-font;
+  font-weight: 700;
+}
+
+h6 {
+  font-family: $accent-font;
+  font-size: 1.7rem;
+}
+
+p, td, li, ol, ul, div, span, {
+  font-family: $body-sans-font;
+  font-weight: 400;
+  line-height: 2rem;
+}
+
+
