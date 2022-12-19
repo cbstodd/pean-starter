@@ -1,20 +1,29 @@
-import { NgModule } from '@angular/core';
+import { NgModule, Renderer2 } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { NzTableModule } from 'ng-zorro-antd/table';
-import { NzGridModule } from 'ng-zorro-antd/grid';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { CoreModule } from './core/core.module';
+
+import { FormsModule } from '@angular/forms';
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+  ],
+  exports: [
+    BrowserAnimationsModule
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     AppRoutingModule,
-    NzTableModule,
-    NzGridModule
+    CoreModule,
+    MzIconModule,
+    MzIconMdiModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

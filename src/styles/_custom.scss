@@ -5,6 +5,7 @@ html, body {
   --webkit-font-smoothing: subpixel-ant;
   --moz-font-smoothing: subpixel-ant;
   -o-font-smoothing: subpixel-ant;
+
 }
 
 h1, h2 {
@@ -15,6 +16,7 @@ h1, h2 {
 h3, h4, th {
   font-family: $subheader-font;
   font-weight: 700;
+  color: $midnight !important;
 }
 
 h5 {
@@ -24,8 +26,8 @@ h5 {
 
 h6 {
   font-family: $accent-font;
-  font-weight: 700;
-  font-size: 1.5rem;
+  font-weight: 800;
+  font-size: 2rem;
 }
 
 p, td, li, ol, ul, div {
@@ -37,4 +39,17 @@ p, td, li, ol, ul, div {
 .highlight {
   @include code;
 }
+
+.col-items * {
+  margin: auto;
+
+  &.col-item {
+    background-color: $midnight;
+    color: $cloud;
+    border: 1px solid $silver;
+    padding: 3rem;
+    text-align: center;
+  }
+}
+
 

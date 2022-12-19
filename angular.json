@@ -28,16 +28,14 @@
               "src/assets"
             ],
             "styles": [
-              "node_modules/ng-zorro-antd/ng-zorro-antd.min.css",
-              "src/styles/styles.scss"
+              "src/styles/styles.scss",
+              "node_modules/materialize-css/dist/css/materialize.min.css",
+              "node_modules/@mdi/font/css/materialdesignicons.min.css"
             ],
-            "stylePreprocessorOptions": {
-              "includePaths": [
-                "node_modules/ng-zorro-antd/",
-                "src/styles/"
-              ]
-            },
-            "scripts": []
+            "scripts": [
+              "node_modules/jquery/dist/jquery.min.js",
+              "node_modules/materialize-css/dist/js/materialize.min.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -103,16 +101,14 @@
               "src/assets"
             ],
             "styles": [
-              "node_modules/ng-zorro-antd/ng-zorro-antd.min.css",
+              "node_modules/materialize-css/dist/css/materialize.min.css",
+              "node_modules/@mdi/font/css/materialdesignicons.min.css",
               "src/styles/styles.scss"
             ],
-            "stylePreprocessorOptions": {
-              "includePaths": [
-                "node_modules/ng-zorro-antd/",
-                "src/styles/"
-              ]
-            },
-            "scripts": []
+            "scripts": [
+              "node_modules/jquery/dist/jquery.min.js",
+              "node_modules/materialize-css/dist/js/materialize.min.js"
+            ]
           }
         }
       }
