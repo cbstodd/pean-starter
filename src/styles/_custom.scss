@@ -1,5 +1,5 @@
 html, body {
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1.25rem;
   font-smoothing: subpixel-ant;
   --webkit-font-smoothing: subpixel-ant;
@@ -12,25 +12,29 @@ h1, h2 {
   font-weight: 700;
 }
 
-h3, h4, h5, th {
+h3, h4, th {
   font-family: $subheader-font;
   font-weight: 700;
 }
 
-h6 {
-  font-family: $accent-font;
-  font-size: 1.7rem;
-  font-weight: 700;
+h5 {
+  font-family: $subheader-font;
+  font-weight: 800;
 }
 
-p, td, li, ol, ul, div, span, {
+h6 {
+  font-family: $accent-font;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+p, td, li, ol, ul, div {
   font-family: $body-sans-font;
   font-weight: 500;
   line-height: 2rem;
 }
 
-code, pre {
-  font-family: $monospace-font;
-  font-size: 1rem;
-  lin-height: 1.5rem;
+.highlight {
+  @include code;
 }
+

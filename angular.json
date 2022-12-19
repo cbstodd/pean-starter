@@ -33,7 +33,8 @@
             ],
             "stylePreprocessorOptions": {
               "includePaths": [
-                "src/styles/style.scss"
+                "node_modules/ng-zorro-antd/",
+                "src/styles/"
               ]
             },
             "scripts": []
@@ -107,6 +108,7 @@
             ],
             "stylePreprocessorOptions": {
               "includePaths": [
+                "node_modules/ng-zorro-antd/",
                 "src/styles/"
               ]
             },
