@@ -6,23 +6,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit {
-  title: string = '';
-  subtitle: string = '';
-
-  dummyCSS = '';
+  title: string;
+  subtitle: string;
 
   constructor() {
-
+    this.title = `My Gift Network`;
+    this.subtitle = `Welcome to My Gift Network`;
   }
 
   ngOnInit(): void {
-    this.title = 'My Gift Network - Version 2.0';
-    this.dummyCSS = `this.dummyCSS =
-  p, td, li, ol, ul, div, span {
-  font-family: $body3-sans-font;
-  font-weight: 500;
-  line-height: 2rem;
-  }`;
-    this.subtitle = 'Second version which is a complete re-write using PostgreSQL versus Google Firestore.';
+
+
   }
 }

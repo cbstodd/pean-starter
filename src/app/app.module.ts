@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NzTableModule } from 'ng-zorro-antd/table';
 import { NzGridModule } from 'ng-zorro-antd/grid';
+import { CoreModule } from './core/core.module';
 
 @NgModule({
   declarations: [
@@ -13,6 +14,7 @@ import { NzGridModule } from 'ng-zorro-antd/grid';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    CoreModule,
     NzTableModule,
     NzGridModule
   ],
