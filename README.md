@@ -1,7 +1,7 @@
 # <a href="https://mygiftnetwork.com" target="_blank" rel="nofollow">My Gift Network | Version 2.0</a>
 
 <div style="max-width:200px;">
-<img src="https://i0.wp.com/mygiftnetwork.com/wp-content/uploads/2018/05/cropped-pp_800.png?fit=800%2C800&ssl=1" style="max-width:200px;">
+<img src="https://i0.wp.com/mygiftnetwork.com/wp-content/uploads/2018/05/cropped-pp_800.png?fit=800%2C800&ssl=1" style="max-width:200px; width:200px;">
 </div>
 
 #### ***A redesign of the My Gift Network app***.
