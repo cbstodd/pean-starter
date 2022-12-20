@@ -1,27 +1,51 @@
-# MygiftnetworkPostgresql
+# my-gift-network-v2
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.8.
+### To setup:
 
-## Development server
+Open up your terminal and clone the project:
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+    git clone git@github.com:cbstodd/my-gift-network-v2.git
 
-## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Change/Move into project directory:
 
-## Build
+    cd my-gift-network-v2
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-## Running unit tests
+Install dependencies:
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+    npm install
 
-## Running end-to-end tests
+<p>&nbsp;</p>
+<p>&nbsp;</p>
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
 
-## Further help
+============================================================================
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+### About Author:
+
+<div style="text-align:left;">
+<a href="https://colinstodd.com" target="_blank" title="Visit ColinStod.com">
+<img src="https://firebasestorage.googleapis.com/v0/b/colinstodd-com.appspot.com/o/images%2F2021%2Fcs_pink_260.png?alt=media&token=db675edb-93c7-4708-8d38-9a6c65edb20a" title="visit ColinStodd.com" alt="Colin Stodd's Logo" style="width:30px; max-width:30px; vertical-align:middle;" />
+<h3 style="text-align:left; display:inline; margin-top:10px; padding:0.5rem">Colin Stodd</h3>
+</a>
+</div><br>
+<a href="https://colinstodd.com" target="_blank" title="Visit ColinStod.com">
+<small><i>Visit Personal Site ¬=> </i></small>
+</a>
+<p>
+Front-End developer.
+</p>
+
+
+============================================================================
+
+<p>&nbsp;</p>
+
+
+#### This project is licensed under the [Apache-2.0](http://www.apache.org/licenses/LICENSE-2.0.html) license:
+<a href="http://www.apache.org/licenses/LICENSE-2.0.html" target="_blank" title="Apache-2.0 license">
+<img src="https://th.bing.com/th/id/R.dbbb60ad98c26c49d0f9e7b5fe72d20f?rik=Ywy9a%2bxLDxwXFg&riu=http%3a%2f%2fwww.iddfestivalrotterdam.nl%2fmanual%2fimages%2ffeather.png&ehk=XDMzg5qLTHxjJB50E1OSJg51OgwvRZAcOi1v93Do3zg%3d&risl=&pid=ImgRaw&r=0" alt="Apache-2.0 license" style="width:150px;max-width:200px;" />
+</a>
+
