@@ -7,19 +7,23 @@ import { SmallSidebarRightComponent } from './components/sidebars/small-sidebar-
 import { NzDrawerModule } from 'ng-zorro-antd/drawer';
 import { NzButtonModule } from 'ng-zorro-antd/button';
 import { NzSpaceModule } from 'ng-zorro-antd/space';
+import { NzMenuModule } from 'ng-zorro-antd/menu';
+import { CoreComponent } from './components/core.component';
 
 @NgModule({
   declarations: [
     NavbarComponent,
     FooterComponent,
     LargeSidebarRightComponent,
-    SmallSidebarRightComponent
+    SmallSidebarRightComponent,
+    CoreComponent,
   ],
   imports: [
     CommonModule,
     NzDrawerModule,
     NzButtonModule,
     NzSpaceModule,
+    NzMenuModule
   ],
   exports: [
     NavbarComponent,
