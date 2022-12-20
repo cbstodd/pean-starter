@@ -1,4 +1,8 @@
-# my-gift-network-v2
+# <a href="https://mygiftnetwork.com" target="_blank" rel="nofollow">My Gift Network | Version 2.0</a>
+
+<img src="https://i0.wp.com/mygiftnetwork.com/wp-content/uploads/2018/05/cropped-pp_800.png?fit=800%2C800&ssl=1" style="max-width:200px;">
+
+#### ***A redesign of the My Gift Network app***.
 
 ### To setup:
 
