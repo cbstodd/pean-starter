@@ -7,18 +7,14 @@ import { Component, Input, OnInit, Output } from '@angular/core';
 })
 export class CoreComponent implements OnInit {
 
-  visible: boolean = false;
-
   constructor() {
   }
 
   ngOnInit(): void {
   }
 
-  open(): void {
-    this.visible = true;
-  }
 
 
 
 }
+``

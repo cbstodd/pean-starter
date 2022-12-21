@@ -7,21 +7,11 @@ import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
   styleUrls: ['./small-sidebar-right.component.scss']
 })
 export class SmallSidebarRightComponent implements OnInit {
-  @Output() open:  EventEmitter<any> = new EventEmitter();
 
-  visible: boolean = false;
-  size: 'large' | 'small' = 'small';
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit(): void {
-  }
-
-  get title(): string {
-    return `${this.size} Drawer`;
-  }
-
-  close(): void {
-    this.visible = false;
   }
 
 

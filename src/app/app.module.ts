@@ -3,9 +3,11 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { NzTableModule } from 'ng-zorro-antd/table';
 import { NzGridModule } from 'ng-zorro-antd/grid';
 import { CoreModule } from './core/core.module';
+import { NzIconModule } from 'ng-zorro-antd/icon';
+import { HttpClientModule } from '@angular/common/http';
+import { NzTypographyModule } from 'ng-zorro-antd/typography';
 
 @NgModule({
   declarations: [
@@ -13,12 +15,16 @@ import { CoreModule } from './core/core.module';
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     AppRoutingModule,
     CoreModule,
-    NzTableModule,
-    NzGridModule
+    NzIconModule,
+    NzGridModule,
+    NzTypographyModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [
+    AppComponent
+  ]
 })
 export class AppModule {}
