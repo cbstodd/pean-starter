@@ -9,6 +9,10 @@ import { NzLayoutModule } from 'ng-zorro-antd/layout';
 import { CoreComponent } from './components/core.component';
 import { NzBreadCrumbModule } from 'ng-zorro-antd/breadcrumb';
 import { NzIconModule } from 'ng-zorro-antd/icon';
+import { NzPageHeaderModule } from 'ng-zorro-antd/page-header';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { NzMenuModule } from 'ng-zorro-antd/menu';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
 @NgModule({
@@ -24,7 +28,10 @@ import { NzIconModule } from 'ng-zorro-antd/icon';
     NzLayoutModule,
     NzGridModule,
     NzBreadCrumbModule,
-    NzIconModule
+    NzIconModule,
+    NzPageHeaderModule,
+    NzMenuModule,
+    BrowserAnimationsModule,
   ],
   exports: [
     NavbarComponent,

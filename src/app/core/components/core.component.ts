@@ -6,6 +6,8 @@ import { Component, Input, OnInit, Output } from '@angular/core';
   styleUrls: ['./core.component.scss']
 })
 export class CoreComponent implements OnInit {
+  isCollapsed: boolean = false;
+
 
   constructor() {
   }
@@ -14,7 +16,8 @@ export class CoreComponent implements OnInit {
   }
 
 
-
+  setCollapsed() {
+    this.isCollapsed = !this.isCollapsed;
+  }
 
 }
-``
