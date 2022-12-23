@@ -3,16 +3,19 @@
   <nz-sider nzCollapsible [(nzCollapsed)]="isCollapsed">
     <div class="logo">
       <span nz-icon nzType="gift" nzTheme="twotone"></span>&nbsp;
-      <span class="logo-text" *ngIf="!isCollapsed" >
-          MGN
+      <span class="logo-text" *ngIf="!isCollapsed">
+          {{ appInitials }}
         </span>
     </div>
     <ul nz-menu nzTheme="dark" nzMode="inline">
-      <li nz-submenu nzTitle="User" nzIcon="user">
-        <ul>
-          <li nz-menu-item>Tom</li>
-          <li nz-menu-item>Bill</li>
-          <li nz-menu-item>Alex</li>
+      <li nz-submenu nzTitle="Followers" nzIcon="user-switch">
+        <ul *ngFor="let follower of followers">
+          <li nz-menu-item>{{ follower }}</li>
+        </ul>
+      </li>
+      <li nz-submenu nzTitle="Following" nzIcon="user-switch">
+        <ul *ngFor="let follow of following">
+          <li nz-menu-item>{{ follow }}</li>
         </ul>
       </li>
       <li nz-submenu nzTitle="Team" nzIcon="team">
@@ -40,7 +43,7 @@
         <nz-breadcrumb-item>User</nz-breadcrumb-item>
         <nz-breadcrumb-item>Bill</nz-breadcrumb-item>
       </nz-breadcrumb>
-      <div class="inner-content">Bill is a cat.</div>
+      <div class="inner-content">Bill is a GOAT.</div>
     </nz-content>
     <nz-footer></nz-footer>
   </nz-layout>

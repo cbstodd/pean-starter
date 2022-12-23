@@ -38,8 +38,8 @@
             ],
             "stylePreprocessorOptions": {
               "includePaths": [
-                "node_modules/ng-zorro-antd/",
-                "src/styles/"
+                "src/styles/",
+                "node_modules/ng-zorro-antd/"
               ]
             },
             "scripts": []
