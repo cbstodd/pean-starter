@@ -1,0 +1,8 @@
+@import url('../../node_modules/ng-zorro-antd/ng-zorro-antd.min.css');
+/* Import base styles */
+@import url('../../node_modules/ng-zorro-antd/style/index.min.css');
+/* Import one component's styles */
+@import url('../../node_modules/ng-zorro-antd/button/style/index.min.css');
+@import url('https://use.typekit.net/dsh6vbh.css');
+@import url('variables.css');
+@import url('custom.css');

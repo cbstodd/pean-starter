@@ -8,33 +8,29 @@ html, body {
 }
 
 h1, h2 {
-  font-family: $header-font;
+  font-family: var(--header-font);
   font-weight: 700;
 }
 
 h3, h4, th {
-  font-family: $subheader-font;
+  font-family: var(--subheader-font);
   font-weight: 700;
 }
 
 h5 {
-  font-family: $subheader-font;
+  font-family: var(--subheader-font);
   font-weight: 800;
 }
 
 h6 {
-  font-family: $accent-font;
+  font-family: var(--accent-font);
   font-weight: 700;
   font-size: 1.5rem;
 }
 
 p, td, li, ol, ul, div {
-  font-family: $body-sans-font;
+  font-family: var(--body-sans-font);
   font-weight: 500;
   line-height: 2rem;
-}
-
-.highlight {
-  @include code;
 }
 
