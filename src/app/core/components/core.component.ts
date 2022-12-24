@@ -1,4 +1,5 @@
 import { Component, Input, OnInit, Output } from '@angular/core';
+import { User } from '../../user/user';
 
 @Component({
   selector: 'app-core',
@@ -10,6 +11,7 @@ export class CoreComponent implements OnInit {
   appInitials: string;
   followers: string[] = [];
   following: string[] = [];
+  @Output() users: User;
 
 
   constructor() {
@@ -27,7 +29,7 @@ export class CoreComponent implements OnInit {
       'Name 1',
       'Name 2',
       'Name 3'
-    ]
+    ];
 
   }
 

@@ -12,6 +12,9 @@ import { NzIconModule } from 'ng-zorro-antd/icon';
 import { NzPageHeaderModule } from 'ng-zorro-antd/page-header';
 import { NzMenuModule } from 'ng-zorro-antd/menu';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { UserModule } from '../user/user.module';
+import { RouterLink, RouterLinkActive } from '@angular/router';
+import { UserComponent } from '../user/components/user.component';
 
 
 @NgModule({
@@ -31,6 +34,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     NzPageHeaderModule,
     NzMenuModule,
     BrowserAnimationsModule,
+    UserModule,
+    RouterLink,
+    RouterLinkActive,
   ],
   exports: [
     NavbarComponent,

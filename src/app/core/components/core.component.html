@@ -20,7 +20,7 @@
       </li>
       <li nz-submenu nzTitle="Team" nzIcon="team">
         <ul>
-          <li nz-menu-item>Team 1</li>
+          <li nz-menu-item  routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}"><a [routerLinkActive]="['users']">Users</a></li>
           <li nz-menu-item>Team 2</li>
         </ul>
       </li>
@@ -43,7 +43,11 @@
         <nz-breadcrumb-item>User</nz-breadcrumb-item>
         <nz-breadcrumb-item>Bill</nz-breadcrumb-item>
       </nz-breadcrumb>
-      <div class="inner-content">Bill is a GOAT.</div>
+      <div class="inner-content">
+        <!-- Will import data per-routes -->
+
+        <router-outlet [user]="users"></router-outlet>
+      </div>
     </nz-content>
     <nz-footer></nz-footer>
   </nz-layout>
