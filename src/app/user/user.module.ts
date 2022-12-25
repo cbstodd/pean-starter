@@ -6,8 +6,6 @@ import { UserComponent } from './components/user.component';
 import { UserListComponent } from './components/user-list/user-list.component';
 import { UserDetailComponent } from './components/user-detail/user-detail.component';
 import { UserService } from './services/user.service';
-import { CoreModule } from '../core/core.module';
-import { CoreComponent } from '../core/components/core.component';
 import { RouterLink, RouterLinkActive } from '@angular/router';
 
 
