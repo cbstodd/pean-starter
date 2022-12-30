@@ -1,5 +1,7 @@
 import { Component, Input, OnInit, Output } from '@angular/core';
 import { User } from '../../user/user';
+import { UserService } from '../../user/services/user.service';
+import { map, Observable, pipe } from 'rxjs';
 
 @Component({
   selector: 'app-core',
@@ -11,30 +13,21 @@ export class CoreComponent implements OnInit {
   appInitials: string;
   followers: string[] = [];
   following: string[] = [];
-  @Output() users: User;
+  usernames: string;
+  // users: User;
 
-
-  constructor() {
+  constructor(public userService: UserService) {
     this.appInitials = `MGN`;
+    this.usernames = '';
   }
 
   ngOnInit(): void {
-    this.followers = [
-      'Name 1',
-      'Name 2',
-      'Name 3'
-    ];
-
-    this.following = [
-      'Name 1',
-      'Name 2',
-      'Name 3'
-    ];
-
+    this.userService.getUsers().forEach((user: User) => {
+      this.usernames = user.username;
+    });
   }
 
+
 }
-
-
 
 
