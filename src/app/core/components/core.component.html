@@ -1,11 +1,15 @@
 <!-- CORE COMPONENT -->
 <nz-layout>
   <nz-sider nzCollapsible [(nzCollapsed)]="isCollapsed">
-    <div class="logo">
-      <span nz-icon nzType="gift" nzTheme="fill"></span>&nbsp;
-      <span class="logo-text" *ngIf="!isCollapsed">
+    <div class="logo" *ngIf="!isCollapsed">
+      <span nz-icon nzType="gift" nzTheme="fill"></span>
+      <span class="logo-text">
           {{ appInitials }}
-        </span>
+      </span>
+    </div>
+    <!-- TODO: Should animate when click event is triggered -->
+    <div class="collapsed-logo" *ngIf="isCollapsed">
+      <span nz-icon nzType="gift" nzTheme="fill"></span>
     </div>
     <ul nz-menu nzTheme="dark" nzMode="inline">
       <li nz-submenu nzTitle="Followers" nzIcon="user-switch">
@@ -18,7 +22,7 @@
       </li>
       <li nz-submenu nzTitle="Following" nzIcon="user-switch">
         <ul>
-          <!--        <ul *ngFor="let follow of following">-->
+          <!-- <ul *ngFor="let follow of following">-->
           <li nz-menu-item>Following User 1</li>
           <li nz-menu-item>Following User 2</li>
           <li nz-menu-item>Following User 3</li>

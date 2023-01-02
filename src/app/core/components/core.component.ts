@@ -16,7 +16,7 @@ export class CoreComponent implements OnInit {
   // users: User;
 
   constructor(public userService: UserService) {
-    this.appInitials = `MGN`;
+    this.appInitials = `My Gift Network`;
     this.usernames = '';
   }
 
