@@ -1,7 +1,5 @@
 import { Component, Input, OnInit, Output } from '@angular/core';
-import { User } from '../../user/user';
 import { UserService } from '../../user/services/user.service';
-import { map, Observable, pipe } from 'rxjs';
 
 @Component({
   selector: 'app-core',
@@ -14,6 +12,7 @@ export class CoreComponent implements OnInit {
   followers: string[] = [];
   following: string[] = [];
   usernames: string;
+
   // users: User;
 
   constructor(public userService: UserService) {
@@ -22,9 +21,6 @@ export class CoreComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.userService.getUsers().forEach((user: User) => {
-      this.usernames = user.username;
-    });
   }
 
 

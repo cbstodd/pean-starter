@@ -13,14 +13,12 @@ export class UserService {
   }
 
 
-  getUsers(): Observable<User> {
-    return new Observable<User>(
-      subscribeToArray([
-        { username: 'Colper21', createdAt: Date.now(), uuid: '12345' },
-        { username: 'Tom', createdAt: Date.now(), uuid: '14414' },
-        { username: 'Jerry', createdAt: Date.now(), uuid: '42135' },
-        { username: 'Elvis', createdAt: Date.now(), uuid: '98548' },
-      ])
-    );
+  getUsers(): User[] {
+    return [
+      { username: 'Colper21', createdAt: Date.now(), uuid: '12345' },
+      { username: 'Tom', createdAt: Date.now(), uuid: '14414' },
+      { username: 'Jerry', createdAt: Date.now(), uuid: '42135' },
+      { username: 'Elvis', createdAt: Date.now(), uuid: '98548' },
+    ];
   }
 }

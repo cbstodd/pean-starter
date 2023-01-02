@@ -9,13 +9,19 @@
     </div>
     <ul nz-menu nzTheme="dark" nzMode="inline">
       <li nz-submenu nzTitle="Followers" nzIcon="user-switch">
-        <ul *ngFor="let user of usernames">
-          <li nz-menu-item>{{ user }}</li>
+        <ul>
+          <li nz-menu-item>Follower User 1</li>
+          <li nz-menu-item>Follower User 2</li>
+          <li nz-menu-item>Follower User 3</li>
+          <li nz-menu-item>Follower User 4</li>
         </ul>
       </li>
       <li nz-submenu nzTitle="Following" nzIcon="user-switch">
-        <ul *ngFor="let follow of following">
-          <li nz-menu-item>{{ follow }}</li>
+        <ul>
+          <!--        <ul *ngFor="let follow of following">-->
+          <li nz-menu-item>Following User 1</li>
+          <li nz-menu-item>Following User 2</li>
+          <li nz-menu-item>Following User 3</li>
         </ul>
       </li>
       <li nz-submenu nzTitle="Team" nzIcon="team">
@@ -23,7 +29,9 @@
           <li nz-menu-item routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
             <a [routerLinkActive]="['users']">Users</a>
           </li>
+          <li nz-menu-item>Team 1</li>
           <li nz-menu-item>Team 2</li>
+          <li nz-menu-item>Team 3</li>
         </ul>
       </li>
       <li nz-menu-item>
@@ -48,7 +56,7 @@
       <div class="inner-content">
         <!-- Will import data per-routes -->
 
-        <router-outlet [user]="users"></router-outlet>
+        <router-outlet></router-outlet>
       </div>
     </nz-content>
     <nz-footer></nz-footer>
