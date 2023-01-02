@@ -2,8 +2,9 @@
   width: 250px;
   height: auto;
   color: var(--silver);
-  /* background: rgba(255, 255, 255, 0.2); */
+   /*background: rgba(255, 255, 255, 0.2); */
   margin: 16px 30px;
+
 }
 
 .logo.anticon-gift {
