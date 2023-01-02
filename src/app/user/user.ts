@@ -26,31 +26,22 @@ interface URL {
   toString(): string;
 }
 
-class ObjectURLOptions {
-}
-
-declare var URL: {
-  prototype: URL;
-  new(url: string, base?: string): URL;
-  createObjectURL(object: any, options?: ObjectURLOptions): string;
-  revokeObjectURL(url: string): void;
-};
-
 export class User {
   constructor(
     public uuid: string,
     public username: string,
-    // public followersId: string[],
-    // public followingId: string[],
-    // public gifts: Gift[],
-    // public isOnline: boolean = false,
+    public followersId: string[],
+    public followingId: string[],
+    public gifts: Gift[],
+    public favoriteGiftId: string[],
+    public isOnline: boolean = false,
     public createdAt: null | number = Date.now(),
-    // public updatedAt: null | number = Date.now() || createdAt,
-    // public lastTimeOnnline: null | number = Date.now() || createdAt,
-    // public profilePicture: string,
-    // public profileUrl: URL,
-    // public email: string,
-    // public password?: string
+    public updatedAt: null | number = Date.now() || createdAt,
+    public lastTimeOnline: null | number = Date.now() || createdAt,
+    public avatarUrl: URL,
+    public profileUri: URL,
+    public email: string,
+    public password?: string
   ) {
 
   }

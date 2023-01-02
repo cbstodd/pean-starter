@@ -13,7 +13,7 @@ import { NzPageHeaderModule } from 'ng-zorro-antd/page-header';
 import { NzMenuModule } from 'ng-zorro-antd/menu';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { UserModule } from '../user/user.module';
-import { Router, RouterLink, RouterLinkActive, RouterModule } from '@angular/router';
+import { RouterLink, RouterLinkActive, RouterModule } from '@angular/router';
 
 
 @NgModule({
