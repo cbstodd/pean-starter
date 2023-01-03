@@ -1,5 +1,5 @@
-import { Component, Input, OnInit, Output } from '@angular/core';
-import { UserService } from '../../user/services/user.service';
+import {Component, Input, OnInit, Output} from '@angular/core';
+import {UserService} from '../../user/services/user.service';
 
 @Component({
   selector: 'app-core',
@@ -21,6 +21,11 @@ export class CoreComponent implements OnInit {
   }
 
   ngOnInit(): void {
+  }
+
+  sidebarToggle(event: any): void {
+    console.log(event.target);
+    this.isCollapsed !== this.isCollapsed;
   }
 
 

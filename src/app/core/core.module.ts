@@ -36,7 +36,7 @@ import { RouterLink, RouterLinkActive, RouterModule } from '@angular/router';
     BrowserAnimationsModule,
     UserModule,
     RouterLink,
-    RouterLinkActive,
+    RouterLinkActive
   ],
   exports: [
     NavbarComponent,
