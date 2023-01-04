@@ -12,12 +12,13 @@ import { IconDefinition } from '@ant-design/icons-angular';
 import * as AllIcons from '@ant-design/icons-angular/icons';
 import { NZ_ICONS } from 'ng-zorro-antd/icon';
 import { NZ_I18N, en_US } from 'ng-zorro-antd/i18n';
+import { NzSkeletonModule } from "ng-zorro-antd/skeleton";
 
 const antDesignIcons = AllIcons as {
   [key: string]: IconDefinition;
 };
 const icons: IconDefinition[] = Object.keys(antDesignIcons)
-  .map(key => antDesignIcons[key]);
+                                      .map(key => antDesignIcons[key]);
 
 @NgModule({
   declarations: [
@@ -40,4 +41,5 @@ const icons: IconDefinition[] = Object.keys(antDesignIcons)
     AppComponent
   ]
 })
-export class AppModule {}
+export class AppModule {
+}

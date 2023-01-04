@@ -1,10 +1,12 @@
-<nz-list nzBordered [nzHeader]="usersHeader" [nzFooter]="usersFooter">
-  <nz-list-item *ngFor="let user of users | async">
+<nz-list nzBordered [nzHeader]="usersHeader" [nzFooter]="usersFooter" *ngIf="!isLoading">
+  <nz-list-item *ngFor="let user of users">
     <span nz-typography>{{ user.username }} | {{ user.email }}</span>
     <nz-list-item-meta-description *ngIf="user.company">
       {{ user.company.name }}
     </nz-list-item-meta-description>
   </nz-list-item>
 </nz-list>
+<nz-skeleton *ngIf="isLoading"></nz-skeleton>
+<nz-skeleton *ngIf="isLoading"></nz-skeleton>
 
 

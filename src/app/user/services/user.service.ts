@@ -12,11 +12,6 @@ export class UserService {
   }
 
   getUsers(): any {
-    try {
-      return this.http.get(this.placeholderUserData);
-
-    } catch (err) {
-      console.error(err);
-    }
+    return this.http.get(this.placeholderUserData);
   }
 }

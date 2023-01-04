@@ -9,6 +9,7 @@ import { UserService } from './services/user.service';
 import { RouterLink, RouterLinkActive } from '@angular/router';
 import { NzTypographyModule } from "ng-zorro-antd/typography";
 import { NzListModule } from "ng-zorro-antd/list";
+import { NzSkeletonModule } from "ng-zorro-antd/skeleton";
 
 
 @NgModule({
@@ -24,6 +25,7 @@ import { NzListModule } from "ng-zorro-antd/list";
     RouterLinkActive,
     NzTypographyModule,
     NzListModule,
+    NzSkeletonModule,
   ],
   providers: [
     UserService
