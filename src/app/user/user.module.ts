@@ -24,7 +24,9 @@ import { RouterLink, RouterLinkActive } from '@angular/router';
   providers: [
     UserService
   ],
-  bootstrap: [
-  ]
+  exports: [
+    UserListComponent
+  ],
+  bootstrap: []
 })
 export class UserModule {}

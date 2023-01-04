@@ -1,4 +1,4 @@
-.logo {
+a.logo {
   width:       250px;
   height:      auto;
   color:       var(--silver);
@@ -18,15 +18,15 @@
   /*text-align: center;*/
 }
 
-.logo > .anticon-gift {
+a.logo > .anticon-gift {
   color:     var(--lime);
   font-size: var(--med);
 }
 
-.logo.logo-text, .collapsed-logo.logo-text {
+.collapsed-logo, .logo-text {
   color:       var(--silver);
   font-size:   1.4rem;
-  margin-left: 0.65rem;
+  /* margin-left: 0.65rem; */
   top:         0;
   font-weight: 500;
 }

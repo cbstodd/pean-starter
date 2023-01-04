@@ -15,7 +15,7 @@ export class UserListComponent implements OnInit {
 
   ngOnInit(): void {
     this.userService.getUsers()
-      .map((user) => console.table(user));
+      .forEach((user) => console.table(user));
   }
 
 }

@@ -1,12 +1,14 @@
 <!-- CORE COMPONENT -->
 <nz-layout>
   <nz-sider nzCollapsible [(nzCollapsed)]="isCollapsed">
-    <div class="logo" *ngIf="!isCollapsed">
-      <span nz-icon nzType="gift" nzTheme="fill"></span>
-      <span class="logo-text">
+
+      <a [routerLink]="['/']" class="logo" *ngIf="!isCollapsed">
+        <span nz-icon nzType="gift" nzTheme="fill"></span>
+        <span class="logo-text">
           {{ appInitials }}
       </span>
-    </div>
+      </a>
+
     <!-- TODO: Should animate when click event is triggered -->
     <div class="collapsed-logo" *ngIf="isCollapsed">
       <span nz-icon nzType="gift" nzTheme="fill"></span>
@@ -51,7 +53,7 @@
            type="button"
            nz-icon
            [nzType]="isCollapsed ? 'menu-unfold' : 'menu-fold'"
-           (click)="sidebarToggle($event)">
+           (click)="sidebarToggle()">
         </a>
       </div>
     </nz-header>
@@ -63,7 +65,8 @@
       </nz-breadcrumb>
       <div class="inner-content">
         <!-- Will import data per-routes -->
-        <router-outlet></router-outlet>
+        <app-user-list></app-user-list>
+<!--        <router-outlet></router-outlet>-->
       </div>
     </nz-content>
     <nz-footer></nz-footer>

@@ -1,4 +1,4 @@
-import {Component, Input, OnInit, Output} from '@angular/core';
+import {Component, OnInit } from '@angular/core';
 import {UserService} from '../../user/services/user.service';
 
 @Component({
@@ -23,9 +23,8 @@ export class CoreComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  sidebarToggle(event: any): void {
-    console.log(event.target);
-    this.isCollapsed !== this.isCollapsed;
+  sidebarToggle(): void {
+    this.isCollapsed = !this.isCollapsed;
   }
 
 
