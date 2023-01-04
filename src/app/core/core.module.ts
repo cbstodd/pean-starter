@@ -14,6 +14,7 @@ import { NzMenuModule } from 'ng-zorro-antd/menu';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { UserModule } from '../user/user.module';
 import { RouterLink, RouterLinkActive, RouterModule } from '@angular/router';
+import { NzListModule } from "ng-zorro-antd/list";
 
 
 @NgModule({

@@ -1,1 +1,10 @@
-<p>user-list works!</p>
+<nz-list nzBordered [nzHeader]="usersHeader" [nzFooter]="usersFooter">
+  <nz-list-item *ngFor="let user of users | async">
+    <span nz-typography>{{ user.username }} | {{ user.email }}</span>
+    <nz-list-item-meta-description *ngIf="user.company">
+      {{ user.company.name }}
+    </nz-list-item-meta-description>
+  </nz-list-item>
+</nz-list>
+
+
