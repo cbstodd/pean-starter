@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit, Output } from '@angular/core';
 import { UserService } from '../../services/user.service';
 
 @Component({
@@ -7,10 +7,11 @@ import { UserService } from '../../services/user.service';
   styleUrls: [ './user-list.component.css' ]
 })
 export class UserListComponent implements OnInit {
-  users: any | null;
+  @Input() users: any;
+  isLoading: boolean = true;
   usersHeader: string;
   usersFooter: string;
-  isLoading: boolean = true;
+
 
   constructor(private userService: UserService) {
     this.usersHeader = 'All Users';
@@ -18,19 +19,17 @@ export class UserListComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.users = this.userService.getUsers()
-                     .subscribe((users: object) => {
-                       try {
-                         this.isLoading = false;
-                         this.users = users;
-                         console.table(this.users);
-                       } catch (err) {
-                         this.isLoading = true;
-                         this.users = null;
-                         console.error(err);
-                       }
-                     });
-
+    this.userService.getUsers()
+        .subscribe((users: object[]) => {
+          try {
+            this.isLoading = false;
+            this.users = users;
+            console.table(this.users);
+          } catch (err) {
+            this.isLoading = true;
+            console.error(err);
+          }
+        });
   }
 
 }

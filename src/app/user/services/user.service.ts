@@ -5,7 +5,7 @@ import { HttpClient } from "@angular/common/http";
   providedIn: 'root'
 })
 export class UserService {
-  placeholderUserData: string = 'https://jsonplaceholder.typicode.com/users';
+  placeholderUserData: string = 'https://jsonplaceholder.typicode.com/users/';
 
   constructor(private http: HttpClient) {
 

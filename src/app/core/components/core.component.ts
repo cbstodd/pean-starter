@@ -8,7 +8,7 @@ import {UserService} from '../../user/services/user.service';
 })
 export class CoreComponent implements OnInit {
   isCollapsed: boolean = false;
-  appInitials: string;
+  title: string;
   followers: string[] = [];
   following: string[] = [];
   usernames: string;
@@ -16,7 +16,7 @@ export class CoreComponent implements OnInit {
   // users: User;
 
   constructor(public userService: UserService) {
-    this.appInitials = `My Gift Network`;
+    this.title = `My Gift Network`;
     this.usernames = '';
   }
 

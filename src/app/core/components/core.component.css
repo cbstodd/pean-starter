@@ -74,3 +74,6 @@ nz-footer {
   min-height: 100%;
 }
 
+.ant-layout-sider-trigger .ng-star-inserted {
+  position: absolute;
+}
