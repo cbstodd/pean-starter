@@ -14,7 +14,6 @@ import { NzMenuModule } from 'ng-zorro-antd/menu';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { UserModule } from '../user/user.module';
 import { RouterLink, RouterLinkActive, RouterModule } from '@angular/router';
-import { userRoutes } from '../user/user.routes';
 
 
 @NgModule({
@@ -26,7 +25,6 @@ import { userRoutes } from '../user/user.routes';
     CoreComponent,
   ],
   imports: [
-    RouterModule.forChild(userRoutes),
     CommonModule,
     NzLayoutModule,
     NzGridModule,
@@ -41,6 +39,7 @@ import { userRoutes } from '../user/user.routes';
   ],
   exports: [
     RouterModule,
+    CoreComponent,
   ],
   providers: [],
   bootstrap: [],

@@ -1,14 +1,13 @@
-import { Component, Input, OnDestroy, OnInit, Output } from '@angular/core';
+import { Component, OnInit, Output } from '@angular/core';
 import { UserService } from '../../services/user.service';
 import { User } from '../../user';
-import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-user-list',
   templateUrl: './user-list.component.html',
   styleUrls: [ './user-list.component.css' ],
 })
-export class UserListComponent implements OnInit, OnDestroy {
+export class UserListComponent implements OnInit {
   @Output() users: any;
   isLoading: boolean = true;
   userHeader: string;
@@ -22,11 +21,11 @@ export class UserListComponent implements OnInit, OnDestroy {
 
   ngOnInit(): void {
     this.userService.getUsers()
-        .subscribe((user: object[]) => {
+        .subscribe((user: User): void => {
           try {
             this.isLoading = false;
+            console.table(user);
             this.users = user;
-            console.table(this.users);
           } catch (err) {
             this.isLoading = true;
             console.error(err);
@@ -34,8 +33,5 @@ export class UserListComponent implements OnInit, OnDestroy {
         });
   }
 
-  ngOnDestroy(): void {
-    this.userService.getUsers().unsubscribe();
-  }
 
 }

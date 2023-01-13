@@ -18,7 +18,7 @@ const antDesignIcons = AllIcons as {
   [key: string]: IconDefinition;
 };
 const icons: IconDefinition[] = Object.keys(antDesignIcons)
-                                      .map(key => antDesignIcons[key]);
+  .map(key => antDesignIcons[key]);
 
 @NgModule({
   declarations: [

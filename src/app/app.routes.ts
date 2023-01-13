@@ -6,14 +6,11 @@ import { UserModule } from './user/user.module';
 export const appRoutes: Routes = [
   {
     path: '', component: AppComponent, children: [
-      {
-        path: '', component: CoreComponent, children: [
-          { path: 'users', loadChildren: () => UserModule },
-        ],
-      },
+      { path: 'users', loadChildren: () => UserModule },
     ],
   },
   { path: '**', redirectTo: '', pathMatch: 'full' },
-
 ];
+
+
 

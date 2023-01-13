@@ -1,13 +1,17 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from "@angular/common/http";
+import { environment } from '../../../environments/environment';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class UserService {
-  placeholderUserData: string = 'https://jsonplaceholder.typicode.com/users/';
+  placeholderUserData: string;
+
+  // mockApi: string;
 
   constructor(private http: HttpClient) {
+    this.placeholderUserData = environment.placeholderUserData;
 
   }
 
