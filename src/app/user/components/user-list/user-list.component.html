@@ -1,8 +1,8 @@
 <!-- USER-LIST -->
-<nz-list nzBordered [nzHeader]="usersHeader" [nzFooter]="usersFooter" *ngIf="!isLoading">
+<nz-list nzBordered [nzHeader]="userHeader" [nzFooter]="userFooter" *ngIf="!isLoading">
   <nz-list-item *ngFor="let user of users">
-    <app-user-item [user]="user" *ngIf="users"></app-user-item>
-    <nz-skeleton *ngIf="!users"></nz-skeleton>
+    <app-user-item [user]="user" *ngIf="user"></app-user-item>
+    <nz-skeleton *ngIf="!user"></nz-skeleton>
   </nz-list-item>
 </nz-list>
 

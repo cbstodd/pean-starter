@@ -1,48 +1,50 @@
-// class Gift {
-//   constructor(
-//     public id: string,
-//     public title: string,
-//     public price: number,
-//     public purchased: boolean,
-//     public affiliatedUrl: string,
-//     public createdAt: number = Date.now(),
-//   ) {
-//   }
-// }
-//
-// interface URL {
-//   hash: string;
-//   host: string;
-//   hostname: string;
-//   href: string;
-//   readonly origin: string;
-//   password: string;
-//   pathname: string;
-//   port: string;
-//   protocol: string;
-//   search: string;
-//   username: string;
-//
-//   toString(): string;
-// }
+class Gift {
+  constructor(
+    public id: string,
+    public title: string,
+    public price: number,
+    public purchased: boolean,
+    public affiliatedUrl: string,
+    public createdAt: number = Date.now(),
+  ) {
+  }
+
+}
+
 
 export class User {
-  constructor(
-    public uuid: string,
-    public username: string,
-    public followersId: string[],
-    public followingId: string[],
-    public createdAt: null | number = Date.now(),
-    public updatedAt: null | number = Date.now() || createdAt,
-    public isOnline: boolean = false,
-    // public favoriteGiftId: string[],
-    // public gifts: Gift[],
-    // public lastTimeOnline: null | number = Date.now() || createdAt,
-    // public avatarUrl: URL,
-    // public profileUri: URL,
-    // public email: string,
-    // public password?: string
-  ) {
+  // avatarUrl: string;
+  // createdAt: number | Timestamp<string>;
+  email: string;
+  // favoriteGifts: string[];
+  // followers: string[];
+  // followingId: string[];
+  // isOnline: boolean;
+  name: string | null;
+  // profileUrl: URL;
+  // myGifts: Gift[];
+  // updatedAt: number | Timestamp<string>;
+  username: string;
+  id: string;
 
+  // password?: string;
+
+
+  constructor(user?: any) {
+    // this.avatarUrl = user.avatarUrl;
+    // this.createdAt = user.createdAt = Date.now();
+    this.email = user.email;
+    // this.favoriteGifts = user.favoriteGifts;
+    // this.followers = user.followers;
+    // this.followingId = user.followingId;
+    // this.isOnline = user.isOnline;
+    this.name = user.name || null;
+    // this.profileUrl = user.profileUrl;
+    // this.myGifts = user.myGifts;
+    // this.updatedAt = user.updatedAt = Date.now();
+    this.username = user.username;
+    this.id = user.uid;
+
+    // this.password = user.password;
   }
 }

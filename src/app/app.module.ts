@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
-import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NzGridModule } from 'ng-zorro-antd/grid';
 import { CoreModule } from './core/core.module';
@@ -12,7 +11,8 @@ import { IconDefinition } from '@ant-design/icons-angular';
 import * as AllIcons from '@ant-design/icons-angular/icons';
 import { NZ_ICONS } from 'ng-zorro-antd/icon';
 import { NZ_I18N, en_US } from 'ng-zorro-antd/i18n';
-import { NzSkeletonModule } from "ng-zorro-antd/skeleton";
+import { RouterModule } from "@angular/router";
+import { appRoutes } from "./app.routes";
 
 const antDesignIcons = AllIcons as {
   [key: string]: IconDefinition;
@@ -25,9 +25,9 @@ const icons: IconDefinition[] = Object.keys(antDesignIcons)
     AppComponent
   ],
   imports: [
+    RouterModule.forRoot(appRoutes),
     BrowserModule,
     HttpClientModule,
-    AppRoutingModule,
     CoreModule,
     NzIconModule,
     NzGridModule,
@@ -39,6 +39,9 @@ const icons: IconDefinition[] = Object.keys(antDesignIcons)
   ],
   bootstrap: [
     AppComponent
+  ],
+  exports: [
+    RouterModule
   ]
 })
 export class AppModule {

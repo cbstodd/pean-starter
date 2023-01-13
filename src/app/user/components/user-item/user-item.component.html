@@ -1,6 +1,6 @@
 <!-- USER-ITEM -->
 <span nz-typography *ngIf="user">{{ user.username }} | {{ user.email }}</span>
-<nz-list-item-meta-description *ngIf="user && user.company">
-  {{ user.company.name }}
+<nz-list-item-meta-description *ngIf="user">
+  {{ user.username }}
 </nz-list-item-meta-description>
 

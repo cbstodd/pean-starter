@@ -1,14 +1,12 @@
 <!-- CORE -->
 <nz-layout>
   <nz-sider nzCollapsible [(nzCollapsed)]="isCollapsed">
-
-      <a [routerLink]="['/']" class="logo" *ngIf="!isCollapsed">
-        <span nz-icon nzType="gift" nzTheme="fill"></span>
-        <span class="logo-text">
+    <a [routerLink]="['/']" class="logo" *ngIf="!isCollapsed">
+      <span nz-icon nzType="gift" nzTheme="fill"></span>
+      <span class="logo-text">
           {{ title }}
       </span>
-      </a>
-
+    </a>
     <!-- TODO: Should animate when click event is triggered -->
     <div class="collapsed-logo" *ngIf="isCollapsed">
       <span nz-icon nzType="gift" nzTheme="fill"></span>
@@ -30,16 +28,6 @@
           <li nz-menu-item>Following User 3</li>
         </ul>
       </li>
-      <!--      <li nz-submenu nzTitle="Team" nzIcon="team">-->
-      <!--        <ul>-->
-      <!--          <li nz-menu-item routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">-->
-      <!--            <a [routerLinkActive]="['users']">Users</a>-->
-      <!--          </li>-->
-      <!--          <li nz-menu-item>Favorite</li>-->
-      <!--          <li nz-menu-item>Favorite</li>-->
-      <!--          <li nz-menu-item>Favorite</li>-->
-      <!--        </ul>-->
-      <!--      </li>-->
       <li nz-menu-item>
         <span nz-icon nzType="plus"></span>
         <span>New Gift</span>
@@ -65,8 +53,7 @@
       </nz-breadcrumb>
       <div class="inner-content">
         <!-- Will import data per-routes -->
-        <app-user-list></app-user-list>
-<!--        <router-outlet></router-outlet>-->
+        <router-outlet></router-outlet>
       </div>
     </nz-content>
     <nz-footer></nz-footer>

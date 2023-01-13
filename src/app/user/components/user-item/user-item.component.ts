@@ -1,5 +1,5 @@
 import { Component, Input, OnInit, Output } from '@angular/core';
-import { UserService } from "../../services/user.service";
+import { User } from '../../user';
 
 @Component({
   selector: 'app-user-item',
@@ -7,7 +7,7 @@ import { UserService } from "../../services/user.service";
   styleUrls: [ './user-item.component.css' ]
 })
 export class UserItemComponent implements OnInit {
-  @Output() user: any;
+  @Input() user: User;
 
   constructor() {
   }
