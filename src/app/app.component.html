@@ -1,15 +1,17 @@
 <!-- APP -->
 <nz-layout>
   <nz-sider nzCollapsible [(nzCollapsed)]="isCollapsed">
-    <a [routerLink]="['/']" class="logo" *ngIf="!isCollapsed">
-      <span nz-icon nzType="gift" nzTheme="fill"></span>
-      <span class="logo-text">
+    <div class="logo">
+      <a [routerLink]="['/']" *ngIf="!isCollapsed">
+        <span nz-icon nzType="gift" nzTheme="twotone"></span>
+        <span class="logo-text">
           {{ title }}
-      </span>
-    </a>
+        </span>
+      </a>
+    </div>
     <!-- TODO: Should animate when click event is triggered -->
     <div class="collapsed-logo" *ngIf="isCollapsed">
-      <span nz-icon nzType="gift" nzTheme="fill"></span>
+      <span nz-icon nzType="gift" nzTheme="twotone"></span>
     </div>
     <ul nz-menu nzTheme="dark" nzMode="inline">
       <li nz-submenu nzTitle="Followers" nzIcon="team">

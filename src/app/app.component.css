@@ -1,35 +1,32 @@
-a.logo {
-  width:       250px;
-  height:      auto;
-  color:       var(--silver);
-  /*background: rgba(255, 255, 255, 0.2); */
-  margin:      16px auto 16px 25px;
-  /*text-align: center;*/
+.logo {
+  margin:      var(--med);
   font-family: var(--subheader-font);
   font-size:   var(--med);
+  color:       var(--silver);
 }
 
 .collapsed-logo {
-  width:  250px;
-  height: auto;
-  color:  var(--silver);
-  /*background: rgba(255, 255, 255, 0.2); */
-  margin: 16px auto 16px 33px;
-  /*text-align: center;*/
+  color:       var(--silver);
+  margin-left: 2.3rem;
 }
 
-a.logo > .anticon-gift {
-  color:     var(--lime);
-  font-size: var(--med);
+.logo-text {
+  font-family: var(--subheader-font);
+  padding-left: 5px
 }
 
-.collapsed-logo, .logo-text {
+.logo-text, .collapsed-logo {
   color:       var(--silver);
   font-size:   1.4rem;
-  /* margin-left: 0.65rem; */
   top:         0;
   font-weight: 500;
 }
+
+.anticon {
+  color:     var(--gum);
+  font-size: var(--med);
+}
+
 
 a.trigger {
   font-size:          18px;
