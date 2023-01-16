@@ -1,0 +1,79 @@
+a.logo {
+  width:       250px;
+  height:      auto;
+  color:       var(--silver);
+  /*background: rgba(255, 255, 255, 0.2); */
+  margin:      16px auto 16px 25px;
+  /*text-align: center;*/
+  font-family: var(--subheader-font);
+  font-size:   var(--med);
+}
+
+.collapsed-logo {
+  width:  250px;
+  height: auto;
+  color:  var(--silver);
+  /*background: rgba(255, 255, 255, 0.2); */
+  margin: 16px auto 16px 33px;
+  /*text-align: center;*/
+}
+
+a.logo > .anticon-gift {
+  color:     var(--lime);
+  font-size: var(--med);
+}
+
+.collapsed-logo, .logo-text {
+  color:       var(--silver);
+  font-size:   1.4rem;
+  /* margin-left: 0.65rem; */
+  top:         0;
+  font-weight: 500;
+}
+
+a.trigger {
+  font-size:          18px;
+  /* line-height:        64px; */
+  padding:            24px;
+  cursor:             pointer;
+  transition:         color 0.3s;
+  -webkit-transition: color 0.3s;
+  -moz-transition:    color 0.3s;
+  -ms-transition:     color 0.3s;
+  -o-transition:      color 0.3s;
+}
+
+.trigger:hover {
+  color: var(--ocean);
+}
+
+nz-header {
+  background: var(--grayscale2-50);
+  padding:    0;
+}
+
+nz-content {
+  margin: 0 16px;
+}
+
+nz-breadcrumb {
+  margin: 16px 0;
+}
+
+.inner-content {
+  padding:    24px;
+  background: var(--white);
+  min-height: 360px;
+}
+
+nz-footer {
+  text-align: center;
+}
+
+.ant-layout {
+  min-height: 100%;
+}
+
+.ant-layout-sider-trigger .ng-star-inserted {
+  position: absolute;
+}

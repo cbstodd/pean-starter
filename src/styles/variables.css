@@ -1,8 +1,8 @@
 :root {
   /*Fonts*/
-  --header-font:     sofia-pro-condensed, sans-serif;
-  --subheader-font:  sofia-pro-condensed, proxima-extra-condensed, 'Roboto Condensed', sans-serif;
-  --body-sans-font:  proxima-nova, sofia-pro, 'Avenir Next', Nunito, sans-serif;
+  --header-font:     proxima-extra-condensed, proxima-nova-condensed, sofia-pro-condensed, sans-serif;
+  --subheader-font:  proxima-extra-condensed, sofia-pro-condensed, 'Roboto Condensed', sans-serif;
+  --body-sans-font:  proxima-nova, sofia-pro, 'Avenir Next', Nunito, 'Helvetica Neue', sans-serif;
   --body2-sans-font: 'apparat', Roboto, 'Helvetica Neue', sans-serif;
   --accent-font:     fairplex, serif;
   /*--monospace-font: dico-mono-script, monospace;*/

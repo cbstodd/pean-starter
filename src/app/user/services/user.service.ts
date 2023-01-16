@@ -8,8 +8,6 @@ import { environment } from '../../../environments/environment';
 export class UserService {
   placeholderUserData: string;
 
-  // mockApi: string;
-
   constructor(private http: HttpClient) {
     this.placeholderUserData = environment.placeholderUserData;
 

@@ -1,10 +1,10 @@
-import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 
 @Component({
   selector: 'app-small-sidebar-right',
   templateUrl: './small-sidebar-right.component.html',
-  styleUrls: ['./small-sidebar-right.component.css']
+  styleUrls: [ './small-sidebar-right.component.css' ],
 })
 export class SmallSidebarRightComponent implements OnInit {
 

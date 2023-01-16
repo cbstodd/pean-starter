@@ -11,8 +11,14 @@ import { IconDefinition } from '@ant-design/icons-angular';
 import * as AllIcons from '@ant-design/icons-angular/icons';
 import { NZ_ICONS } from 'ng-zorro-antd/icon';
 import { NZ_I18N, en_US } from 'ng-zorro-antd/i18n';
-import { RouterModule } from "@angular/router";
+import { RouterLink, RouterLinkActive, RouterModule } from "@angular/router";
 import { appRoutes } from "./app.routes";
+import { NzLayoutModule } from 'ng-zorro-antd/layout';
+import { NzBreadCrumbModule } from 'ng-zorro-antd/breadcrumb';
+import { NzPageHeaderModule } from 'ng-zorro-antd/page-header';
+import { NzMenuModule } from 'ng-zorro-antd/menu';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { UserModule } from './user/user.module';
 
 const antDesignIcons = AllIcons as {
   [key: string]: IconDefinition;
@@ -22,7 +28,7 @@ const icons: IconDefinition[] = Object.keys(antDesignIcons)
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
     RouterModule.forRoot(appRoutes),
@@ -32,6 +38,17 @@ const icons: IconDefinition[] = Object.keys(antDesignIcons)
     NzIconModule,
     NzGridModule,
     NzTypographyModule,
+    NzLayoutModule,
+    NzGridModule,
+    NzBreadCrumbModule,
+    NzIconModule,
+    NzPageHeaderModule,
+    NzMenuModule,
+    BrowserAnimationsModule,
+    UserModule,
+    RouterLink,
+    RouterLinkActive,
+
   ],
   providers: [
     { provide: NZ_I18N, useValue: en_US },

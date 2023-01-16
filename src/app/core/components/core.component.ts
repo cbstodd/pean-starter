@@ -1,16 +1,13 @@
-import {Component, OnInit } from '@angular/core';
-import {UserService} from '../../user/services/user.service';
+import { Component, OnInit } from '@angular/core';
+import { UserService } from '../../user/services/user.service';
 
 @Component({
   selector: 'app-core',
   templateUrl: './core.component.html',
-  styleUrls: ['./core.component.css']
+  styleUrls: [ './core.component.css' ],
 })
 export class CoreComponent implements OnInit {
-  isCollapsed: boolean = false;
   title: string;
-  followers: string[] = [];
-  following: string[] = [];
   usernames: string;
 
   // users: User;
@@ -21,10 +18,6 @@ export class CoreComponent implements OnInit {
   }
 
   ngOnInit(): void {
-  }
-
-  sidebarToggle(): void {
-    this.isCollapsed = !this.isCollapsed;
   }
 
 

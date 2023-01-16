@@ -1,12 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { NavbarComponent } from './components/navbar/navbar.component';
-import { FooterComponent } from './components/footer/footer.component';
-import { LargeSidebarRightComponent } from './components/sidebars/large-sidebar-right/large-sidebar-right.component';
-import { SmallSidebarRightComponent } from './components/sidebars/small-sidebar-right/small-sidebar-right.component';
 import { NzGridModule } from 'ng-zorro-antd/grid';
 import { NzLayoutModule } from 'ng-zorro-antd/layout';
-import { CoreComponent } from './components/core.component';
 import { NzBreadCrumbModule } from 'ng-zorro-antd/breadcrumb';
 import { NzIconModule } from 'ng-zorro-antd/icon';
 import { NzPageHeaderModule } from 'ng-zorro-antd/page-header';
@@ -18,11 +13,6 @@ import { RouterLink, RouterLinkActive, RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
-    FooterComponent,
-    LargeSidebarRightComponent,
-    SmallSidebarRightComponent,
-    NavbarComponent,
-    CoreComponent,
   ],
   imports: [
     CommonModule,
@@ -39,7 +29,6 @@ import { RouterLink, RouterLinkActive, RouterModule } from '@angular/router';
   ],
   exports: [
     RouterModule,
-    CoreComponent,
   ],
   providers: [],
   bootstrap: [],
