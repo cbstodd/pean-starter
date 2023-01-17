@@ -38,20 +38,23 @@
   </nz-sider>
   <nz-layout>
     <nz-header>
-      <div class="toggle-trigger">
-        <a class="trigger"
-           type="button"
-           nz-icon
-           [nzType]="isCollapsed ? 'menu-unfold' : 'menu-fold'"
-           (click)="sidebarToggle()">
-        </a>
-      </div>
+      <a class="trigger"
+         type="button"
+         nz-icon
+         [nzType]="isCollapsed ? 'menu-unfold' : 'menu-fold'"
+         (click)="sidebarToggle()">
+      </a>
     </nz-header>
     <nz-content>
       <nz-breadcrumb>
-        <nz-breadcrumb-item>Home</nz-breadcrumb-item>
-        <!-- TODO: This value will load dynamically via routerLink -->
-        <nz-breadcrumb-item>Dynamic Route</nz-breadcrumb-item>
+        <nz-breadcrumb-item>
+          <span nz-icon nzType="home"></span>
+        </nz-breadcrumb-item>
+        <nz-breadcrumb-item>
+          <a [routerLink]="['']" class="">
+            <span>Users</span>
+          </a>
+        </nz-breadcrumb-item>
       </nz-breadcrumb>
       <div class="inner-content">
         <!-- Will import data per-routes -->

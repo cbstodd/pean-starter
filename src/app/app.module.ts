@@ -4,17 +4,16 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { NzGridModule } from 'ng-zorro-antd/grid';
 import { CoreModule } from './core/core.module';
-import { NzIconModule } from 'ng-zorro-antd/icon';
+import { NZ_ICONS, NzIconModule } from 'ng-zorro-antd/icon';
 import { HttpClientModule } from '@angular/common/http';
 import { NzTypographyModule } from 'ng-zorro-antd/typography';
 import { IconDefinition } from '@ant-design/icons-angular';
 import * as AllIcons from '@ant-design/icons-angular/icons';
-import { NZ_ICONS } from 'ng-zorro-antd/icon';
-import { NZ_I18N, en_US } from 'ng-zorro-antd/i18n';
+import { en_US, NZ_I18N } from 'ng-zorro-antd/i18n';
 import { RouterLink, RouterLinkActive, RouterModule } from "@angular/router";
 import { appRoutes } from "./app.routes";
-import { NzLayoutModule } from 'ng-zorro-antd/layout';
-import { NzBreadCrumbModule } from 'ng-zorro-antd/breadcrumb';
+import { NzFooterComponent, NzLayoutModule, NzSiderComponent } from 'ng-zorro-antd/layout';
+import { NzBreadCrumbComponent, NzBreadCrumbModule } from 'ng-zorro-antd/breadcrumb';
 import { NzPageHeaderModule } from 'ng-zorro-antd/page-header';
 import { NzMenuModule } from 'ng-zorro-antd/menu';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -24,7 +23,7 @@ const antDesignIcons = AllIcons as {
   [key: string]: IconDefinition;
 };
 const icons: IconDefinition[] = Object.keys(antDesignIcons)
-  .map(key => antDesignIcons[key]);
+                                      .map(key => antDesignIcons[key]);
 
 @NgModule({
   declarations: [
@@ -35,6 +34,10 @@ const icons: IconDefinition[] = Object.keys(antDesignIcons)
     BrowserModule,
     HttpClientModule,
     CoreModule,
+    BrowserAnimationsModule,
+    UserModule,
+    RouterLink,
+    RouterLinkActive,
     NzIconModule,
     NzGridModule,
     NzTypographyModule,
@@ -44,22 +47,20 @@ const icons: IconDefinition[] = Object.keys(antDesignIcons)
     NzIconModule,
     NzPageHeaderModule,
     NzMenuModule,
-    BrowserAnimationsModule,
-    UserModule,
-    RouterLink,
-    RouterLinkActive,
-
   ],
   providers: [
     { provide: NZ_I18N, useValue: en_US },
-    { provide: NZ_ICONS, useValue: icons }
+    { provide: NZ_ICONS, useValue: icons },
   ],
   bootstrap: [
-    AppComponent
+    AppComponent,
   ],
   exports: [
-    RouterModule
-  ]
+    RouterModule,
+    NzBreadCrumbComponent,
+    NzSiderComponent,
+    NzFooterComponent,
+  ],
 })
 export class AppModule {
 }

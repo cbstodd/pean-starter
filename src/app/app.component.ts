@@ -10,12 +10,15 @@ export class AppComponent implements OnInit {
   subtitle: string;
   isCollapsed: boolean = false;
 
+
   constructor() {
     this.title = `My Gift Network`;
     this.subtitle = `Welcome to My Gift Network`;
+    // this.breadcrumb = route.data['breadcrumb'];
   }
 
   ngOnInit(): void {
+
   }
 
   sidebarToggle(): void {
